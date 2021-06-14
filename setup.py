@@ -17,24 +17,28 @@ setup(
     description = 'A Crpyto price checker',
     long_description = README,
     long_description_content_type = 'text/markdown',
-    #url = 'https://github.com/clieg/pwy',
+    url = 'https://github.com/datdhruvjain/Crypto-Price',
     author = __author__,
-    license = 'GPLv3',
+    license = 'MIT',
+    
     classifiers = [
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
+
     packages = ['CryptoPrice'],
     include_package_data = True,
-    install_requires = ['art==5.2',
+    install_requires = [
+    'art==5.2',
     'certifi==2021.5.30',
     'chardet==4.0.0',
     'colorama==0.4.4',
     'idna==2.10',
     'requests==2.25.1',
-    'urllib3==1.26.5'],
+    'urllib3==1.26.5'
+    ],
+
     entry_points = {'console_scripts': ['crypto=CryptoPrice.__main__:main']},
 )

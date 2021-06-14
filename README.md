@@ -1,7 +1,7 @@
-## TODO:
+# Crpyto Price
+A simple tool built on requests to check the price of various crypto currencies in your Desired Curency
 
-- [ ] Create cli app using argparse
-    - [ ] will have flags for crypto and non-crypto(physical?)
-    - [ ] will have subflags to list all supported cryptos and non cryptos
+usage:
+`crpyto [crpyto name] [fiat name]`
 
-add color!
+fiat is a government backed currency.
