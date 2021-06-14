@@ -1,0 +1,14 @@
+url : "https://datdhruvjain.github.io"
+github_repository: https://github.com/datdhruvjain
+theme: jekyll-theme-hacker
+title: datdhruvjain.github.io
+description: Interesting learnings on Computer stuff.
+name : &name "Dhruv"
+
+#github page setting
+github:
+  is_project_page: false
+
+#site-author
+name : *name 
+bio  : "Interesting learnings on Computer stuff."

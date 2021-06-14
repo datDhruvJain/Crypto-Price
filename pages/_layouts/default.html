@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US " }}">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	{% seo %}
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="{{ '/' | relative_url }}">
+				<h1>{{ site.title | default: site.github.repository_name }}</h1>
+			</a>
+			<h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		{% if site.show_downloads %}
+		<a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
+		<a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
+		<a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+		{% endif %}
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			{{ content }}
+		</section>
+	</div>
+</body>
+
+</html>
