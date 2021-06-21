@@ -12,12 +12,12 @@ README = (HERE / 'README.md').read_text()
 
 
 setup(
-    name = 'crypto',
+    name = 'cryptoker',
     version = __version__,
     description = 'A Crpyto price checker',
     long_description = README,
     long_description_content_type = 'text/markdown',
-    url = 'https://github.com/datdhruvjain/Crypto-Price',
+    url = 'https://github.com/datdhruvjain/cryptoker
     author = __author__,
     license = 'MIT',
     
@@ -40,5 +40,5 @@ setup(
     'urllib3==1.26.5'
     ],
 
-    entry_points = {'console_scripts': ['crypto=CryptoPrice.__main__:main']},
+    entry_points = {'console_scripts': ['cryptoker=CryptoPrice.__main__:main']},
 )
