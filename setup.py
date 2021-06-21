@@ -17,7 +17,7 @@ setup(
     description = 'A Crpyto price checker',
     long_description = README,
     long_description_content_type = 'text/markdown',
-    url = 'https://github.com/datdhruvjain/cryptoker
+    url = 'https://github.com/datdhruvjain/cryptoker',
     author = __author__,
     license = 'MIT',
     

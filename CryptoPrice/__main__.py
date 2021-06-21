@@ -4,8 +4,8 @@ from art import tprint
 
 #GetData.get_price("ETH", "USD")
 parser = argparse.ArgumentParser(
-    prog="crypto-price",
-    description= "crypto-price - A simple crypto price tool."
+    prog="cryptoker",
+    description= "cryptoker - A simple crypto price tool."
 )
 parser.add_argument("Crypto", choices=GetData.crypto_currencies, metavar="Crypto", type=str.upper)
 parser.add_argument("Fiat", default="USD", choices=GetData.fiat, metavar="Fiat", type=str.upper)
