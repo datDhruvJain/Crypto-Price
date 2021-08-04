@@ -69,7 +69,7 @@ def get_price(crypto, base):
 
 def check_currency(crypto :list, base: list) -> bool:
     """ Simple check to see if the given crypto and fiat in correct and in the given list of currencies
-        Created in case this file is used by another file which is no CryptoPrice.__main__
+        Created in case this file is used by another file which is no src.__main__
     """
     
     if crypto not in crypto_currencies:

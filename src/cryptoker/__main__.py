@@ -1,5 +1,5 @@
 import argparse
-from . import GetData
+from cryptoker import GetData
 from art import tprint
 
 #GetData.get_price("ETH", "USD")
