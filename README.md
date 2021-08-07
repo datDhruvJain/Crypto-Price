@@ -1,5 +1,5 @@
-# Crpyto Price
-A simple tool built on requests to check the price of various crypto currencies in your Desired Curency
+# Crpytoker
+A command line tool for to check cryptocurrency rates in the currency of your choice, with a beautiful Ascii art
 
 usage:
 `crpyto [crpyto name] [fiat name]`
@@ -9,3 +9,10 @@ eg:
 This gets DOGE in terms of Indian Rupee
 
 fiat is a government backed currency.
+
+### Installation
+You can install this package with pip and git.
+
+```shell
+pip install git+https://github.com/datDhruvJain/cryptoker
+```
